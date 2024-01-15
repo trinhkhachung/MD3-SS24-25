@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let n = +prompt("nhap so n");
+            let total = 0;
+            let a;
+            if (isNaN(n) || n <= 0) {
+                console.log("khong hop le");
+            } else {
+                for (let i = 1; i <= n; i++) {
+                    a = 1;
+                    for (let j = 1; j <= i; j++) {
+                        a *= j;
+                    }
+                    total += a;
+                }
+                console.log("tổng là:", total);
+            }
+        
+    </script>
+</body>
+</html>
